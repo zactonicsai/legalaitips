@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Use Policy and Guidance for Legal Professionals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .section-content {
+            scroll-margin-top: 100px;
+        }
+        .toc-link {
+            transition: all 0.3s ease;
+        }
+        .toc-link:hover {
+            transform: translateX(5px);
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-6">
+            <h1 class="text-4xl font-bold mb-2">AI Use Policy & Guidance</h1>
+            <p class="text-xl text-blue-100">Training for Legal Professionals</p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-6 py-8 flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar Table of Contents -->
+        <aside class="lg:w-1/4 no-print">
+            <div class="bg-white rounded-lg shadow-lg p-6 sticky top-24">
+                <h2 class="text-2xl font-bold mb-4 text-blue-900">Table of Contents</h2>
+                <nav class="space-y-2">
+                    <a href="#introduction" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">1. Introduction</a>
+                    <a href="#failures" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">2. AI Failure Cases</a>
+                    <a href="#policy" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">3. Proper Use Guidelines</a>
+                    <a href="#key-uses" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">4. Key Uses of AI</a>
+                    <a href="#costs" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">5. Cost Analysis</a>
+                    <a href="#tools" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">6. Recommended Tools</a>
+                    <a href="#ethics" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">7. Ethical Considerations</a>
+                    <a href="#references" class="toc-link block text-blue-700 hover:text-blue-900 hover:bg-blue-50 p-2 rounded">8. References</a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="lg:w-3/4">
+            <!-- Introduction Section -->
+            <section id="introduction" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">1. Introduction</h2>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2 text-yellow-900">⚠️ Critical Warning</h3>
+                    <p class="text-gray-800">AI tools can hallucinate false information with alarming confidence. Over 300 cases of AI-driven hallucinations have been documented in legal filings since 2023, with over 200 in 2025 alone. Legal professionals MUST verify all AI-generated content.</p>
+                </div>
+
+                <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                    Artificial Intelligence is transforming legal practice at an unprecedented pace. Nearly 75% of lawyers plan to use generative AI in their practice. However, this transformation comes with significant risks that every legal professional must understand and mitigate.
+                </p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Key Statistics</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>58-88% hallucination rate in general-purpose AI models for legal queries</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>1 in 6 queries produces hallucinations even in specialized legal AI tools</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>70-85% time savings possible with proper AI implementation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>486 documented cases worldwide of AI hallucinations in court filings</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- AI Failure Cases Section -->
+            <section id="failures" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">2. Documented AI Failure Cases</h2>
+                
+                <div class="space-y-6">
+                    <!-- Mata v. Avianca -->
+                    <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">Mata v. Avianca, Inc. (2023) - The Landmark Case</h3>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">New York Federal Court</span>
+                        </div>
+                        <p class="text-gray-700 mb-3"><strong>What Happened:</strong> Attorney Steven Schwartz submitted a brief containing more than six fabricated case citations generated by ChatGPT.</p>
+                        <p class="text-gray-700 mb-3"><strong>Consequences:</strong> $5,000 fine, national media attention, and became the benchmark case for AI misuse in legal practice.</p>
+                        <p class="text-gray-700 mb-3"><strong>Key Lesson:</strong> The attorney admitted to using ChatGPT without understanding its limitations and failed to verify the cases existed.</p>
+                        <a href="https://www.pymnts.com/artificial-intelligence-2/2023/attorneys-face-sanctions-after-citing-information-hallucinated-by-chatgpt/" class="text-blue-600 hover:underline font-semibold" target="_blank">Read More →</a>
+                    </div>
+
+                    <!-- Morgan & Morgan Case -->
+                    <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">Morgan & Morgan - Major Law Firm Sanctioned (2024)</h3>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">#42 Law Firm by Size</span>
+                        </div>
+                        <p class="text-gray-700 mb-3"><strong>What Happened:</strong> Attorneys at Morgan & Morgan (one of America's largest law firms) cited nine cases, but only one actually existed. The hallucinated cases came from an internal AI platform.</p>
+                        <p class="text-gray-700 mb-3"><strong>Consequences:</strong> Lead attorney fined $3,000 and removed from the case. Two other attorneys fined $1,000 each.</p>
+                        <p class="text-gray-700 mb-3"><strong>Key Lesson:</strong> Even large, sophisticated firms with internal AI systems are vulnerable. The firm stated: "This serves as a cautionary tale for our firm and all firms."</p>
+                        <a href="https://www.abajournal.com/news/article/no-42-law-firm-by-headcount-could-face-sanctions-over-fake-case-citations-generated-by-chatgpt" class="text-blue-600 hover:underline font-semibold" target="_blank">Read More →</a>
+                    </div>
+
+                    <!-- California Case -->
+                    <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">California Appeals Court - Record $10,000 Fine (2025)</h3>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">Highest State Court Fine</span>
+                        </div>
+                        <p class="text-gray-700 mb-3"><strong>What Happened:</strong> Attorney Amir Mostafavi filed a Social Security appeal where 21 of 23 quoted cases were fabricated by ChatGPT.</p>
+                        <p class="text-gray-700 mb-3"><strong>Consequences:</strong> $10,000 fine - the largest issued by a California state court for AI fabrications. The court published the opinion as a warning to all attorneys.</p>
+                        <p class="text-gray-700 mb-3"><strong>Key Lesson:</strong> The attorney claimed he didn't know ChatGPT would fabricate citations. Court stated: "No brief should contain citations that the attorney has not personally read and verified."</p>
+                        <a href="https://calmatters.org/economy/technology/2025/09/chatgpt-lawyer-fine-ai-regulation/" class="text-blue-600 hover:underline font-semibold" target="_blank">Read More →</a>
+                    </div>
+
+                    <!-- Johnson v. Dunn -->
+                    <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">Johnson v. Dunn - Large Firm Supervisor Liability (2025)</h3>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">Northern District of Alabama</span>
+                        </div>
+                        <p class="text-gray-700 mb-3"><strong>What Happened:</strong> A practice group co-leader at a large, well-regarded firm inserted a hallucinated citation into a motion for leave to take a deposition.</p>
+                        <p class="text-gray-700 mb-3"><strong>Consequences:</strong> Court held that attorneys who sign pleadings are responsible for ALL content, regardless of who authored errors.</p>
+                        <p class="text-gray-700 mb-3"><strong>Key Lesson:</strong> Having a signature on a document creates absolute responsibility. "Stroke of pure luck" that the false citation supported an accurate legal statement.</p>
+                        <a href="https://www.esquiresolutions.com/federal-court-turns-up-the-heat-on-attorneys-using-chatgpt-for-research/" class="text-blue-600 hover:underline font-semibold" target="_blank">Read More →</a>
+                    </div>
+
+                    <!-- Chicago Housing Authority -->
+                    <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">Chicago Housing Authority - Double Irony (2025)</h3>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">Cook County Circuit Court</span>
+                        </div>
+                        <p class="text-gray-700 mb-3"><strong>What Happened:</strong> CHA attorneys cited the non-existent Illinois Supreme Court case "Mack v. Anderson" in a post-trial motion. The attorney had previously published articles on AI ethics.</p>
+                        <p class="text-gray-700 mb-3"><strong>The Irony:</strong> In the motion for sanctions against CHA, plaintiff's attorney also cited a hallucinated quote from "In Re Smith" - also generated by ChatGPT.</p>
+                        <p class="text-gray-700 mb-3"><strong>Consequences:</strong> Attorney relieved of position. Motion for sanctions filed. Demonstrates that even attorneys writing about AI ethics can fall victim.</p>
+                        <a href="https://www.heplerbroom.com/blog/an-illinois-court-responds-to-hallucinated-cases" class="text-blue-600 hover:underline font-semibold" target="_blank">Read More →</a>
+                    </div>
+
+                    <!-- Arizona Social Security Case -->
+                    <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">Arizona Social Security Appeal (2024)</h3>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">U.S. District Court Arizona</span>
+                        </div>
+                        <p class="text-gray-700 mb-3"><strong>What Happened:</strong> Attorney Cassandra Bam cited 12 fabricated cases out of 19 total citations in a brief "replete with citation-related deficiencies."</p>
+                        <p class="text-gray-700 mb-3"><strong>Consequences:</strong> Sanctions imposed. Court clerk notified Washington State Bar Association. Attorney's temporary permission to appear in the court revoked.</p>
+                        <p class="text-gray-700 mb-3"><strong>Key Lesson:</strong> Judge noted citations were "consistent with artificial intelligence generated hallucinations." Bar associations are being notified of violations.</p>
+                        <a href="https://cronkitenews.azpbs.org/2025/10/28/lawyers-ai-hallucinations-chatgpt/" class="text-blue-600 hover:underline font-semibold" target="_blank">Read More →</a>
+                    </div>
+
+                    <!-- Canadian Case - Ko v Li -->
+                    <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">Ko v Li - Canadian Matrimonial Case (2025)</h3>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">Ontario Superior Court</span>
+                        </div>
+                        <p class="text-gray-700 mb-3"><strong>What Happened:</strong> Attorney cited multiple Canadian cases that didn't exist. When questioned, counsel said she would "check with her clerk" if AI was used.</p>
+                        <p class="text-gray-700 mb-3"><strong>Consequences:</strong> Contempt of court sanctions. Court emphasized fundamental duty not to mislead and duty to read cited materials.</p>
+                        <p class="text-gray-700 mb-3"><strong>Key Lesson:</strong> International problem. Courts worldwide are taking AI hallucinations seriously.</p>
+                        <a href="https://www.bclplaw.com/en-US/events-insights-news/fake-legal-authorities-ai-hallucination-or-professional-negligence.html" class="text-blue-600 hover:underline font-semibold" target="_blank">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-orange-50 border-l-4 border-orange-500 p-6">
+                    <h3 class="text-xl font-bold mb-3 text-orange-900">📊 The Scale of the Problem</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><strong>486 worldwide cases</strong> of AI hallucinations documented (as of late 2025)</li>
+                        <li><strong>324 cases in U.S. courts</strong> (federal, state, and tribal)</li>
+                        <li><strong>128 lawyers sanctioned</strong> nationally</li>
+                        <li><strong>2 judges</strong> have made AI hallucination errors</li>
+                        <li><strong>189 pro se litigants</strong> affected</li>
+                        <li><strong>Arizona: 6 cases</strong> since September 2024</li>
+                        <li><strong>Southern District of Florida: 7 cases</strong> - highest U.S. jurisdiction</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">Source: <a href="https://cronkitenews.azpbs.org/2025/10/28/lawyers-ai-hallucinations-chatgpt/" class="text-blue-600 hover:underline" target="_blank">AI Hallucination Cases Database by Damien Charlotin, HEC Paris</a></p>
+                </div>
+            </section>
+
+            <!-- Proper Use Guidelines Section -->
+            <section id="policy" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">3. Proper Use Guidelines & Policy Framework</h2>
+                
+                <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-3 text-green-900">✓ Fundamental Rules</h3>
+                    <ol class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="font-bold text-green-700 mr-3">1.</span>
+                            <span><strong>NEVER submit AI-generated content without verification.</strong> Every citation, fact, and legal proposition must be personally verified.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-green-700 mr-3">2.</span>
+                            <span><strong>Read the full source.</strong> Don't rely on AI summaries. Access and read the complete case, statute, or document.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-green-700 mr-3">3.</span>
+                            <span><strong>Maintain professional responsibility.</strong> Your signature on a document means YOU are responsible for all content.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-green-700 mr-3">4.</span>
+                            <span><strong>Protect client confidentiality.</strong> Never input privileged or confidential information into general AI tools.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-green-700 mr-3">5.</span>
+                            <span><strong>Disclose AI use when required.</strong> Many courts now require disclosure of AI assistance in filings.</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">Court-Mandated Best Practices</h3>
+                <p class="mb-4 text-gray-700">Based on guidance from Madison County, Illinois and other jurisdictions:</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+                        <thead class="bg-blue-900 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Requirement</th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Accuracy Certification</td>
+                                <td class="px-6 py-4">Certify that discovery answers are accurate, complete, and not generated solely by AI</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Consent for Use</td>
+                                <td class="px-6 py-4">All parties must consent to AI tool use in depositions and court proceedings</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Privacy Restrictions</td>
+                                <td class="px-6 py-4">AI tools must meet privacy restrictions and not store any information</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Evidence Disclosure</td>
+                                <td class="px-6 py-4">Disclose AI-generated evidence to opposing party 90 days before trial</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Trial Identification</td>
+                                <td class="px-6 py-4">Identify AI-generated evidence used at trial</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Expert Disclosure</td>
+                                <td class="px-6 py-4">Disclose expert's use of or reliance on AI in forming opinions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 mt-8 text-blue-800">Verification Checklist</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2 text-blue-900">Before Using AI Output:</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>☐ Have I personally read all cited cases?</li>
+                            <li>☐ Do the citations actually exist?</li>
+                            <li>☐ Do the cases stand for the stated propositions?</li>
+                            <li>☐ Is the legal authority still good law?</li>
+                            <li>☐ Have I checked Shepard's or KeyCite?</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2 text-blue-900">Before Filing:</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>☐ Have I disclosed AI use if required?</li>
+                            <li>☐ Is all factual information accurate?</li>
+                            <li>☐ Are quotations exact and in context?</li>
+                            <li>☐ Have I protected client confidentiality?</li>
+                            <li>☐ Can I defend this filing's accuracy under oath?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6">
+                    <h3 class="text-lg font-bold mb-2 text-yellow-900">⚖️ Chief Justice Roberts' Warning</h3>
+                    <p class="text-gray-700">In his 2023 annual report on the federal judiciary, Chief Justice John Roberts specifically warned about AI hallucinations in legal practice, highlighting this as a significant concern for the judicial system.</p>
+                </div>
+            </section>
+
+            <!-- Key Uses Section -->
+            <section id="key-uses" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">4. Key Uses of AI in Legal Practice</h2>
+                
+                <div class="space-y-6">
+                    <div class="border-l-4 border-green-500 bg-green-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-green-900">📄 Contract Review & Analysis</h3>
+                        <p class="text-gray-700 mb-3"><strong>Applications:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li>Automated clause extraction from thousands of contracts</li>
+                            <li>Risk identification and compliance checking</li>
+                            <li>Comparison against standard templates</li>
+                            <li>Due diligence in M&A transactions</li>
+                            <li>Redlining and suggesting alternative language</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3"><strong>Time Savings:</strong> Contracts that took 2+ hours now take 30 minutes. 70-85% reduction in review time.</p>
+                    </div>
+
+                    <div class="border-l-4 border-green-500 bg-green-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-green-900">🔍 Legal Research</h3>
+                        <p class="text-gray-700 mb-3"><strong>Applications:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li>Case law searches with natural language queries</li>
+                            <li>Statute and regulation research</li>
+                            <li>Summarizing lengthy opinions and briefs</li>
+                            <li>Finding analogous cases across jurisdictions</li>
+                            <li>Citation checking and verification (WITH HUMAN OVERSIGHT)</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3"><strong>Best Practice:</strong> Use specialized legal AI tools (Westlaw CoCounsel, Lexis+ AI) rather than general chatbots.</p>
+                    </div>
+
+                    <div class="border-l-4 border-green-500 bg-green-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-green-900">📝 Document Drafting</h3>
+                        <p class="text-gray-700 mb-3"><strong>Applications:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li>Generating initial drafts of motions and briefs</li>
+                            <li>Creating deposition questions</li>
+                            <li>Drafting discovery documents (interrogatories, RFPs)</li>
+                            <li>Client communications and demand letters</li>
+                            <li>Contract templates and clause libraries</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3"><strong>Warning:</strong> All AI-drafted content requires substantial attorney review and editing.</p>
+                    </div>
+
+                    <div class="border-l-4 border-green-500 bg-green-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-green-900">⚖️ Litigation Support</h3>
+                        <p class="text-gray-700 mb-3"><strong>Applications:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li>E-discovery and document review</li>
+                            <li>Timeline creation from multiple documents</li>
+                            <li>Predictive analytics for case outcomes</li>
+                            <li>Identifying key evidence in large document sets</li>
+                            <li>Summarizing depositions and transcripts</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3"><strong>Impact:</strong> One attorney reported 60% time savings on research, leading to 40% more billing capacity.</p>
+                    </div>
+
+                    <div class="border-l-4 border-green-500 bg-green-50 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-bold mb-3 text-green-900">🏛️ Compliance & Regulatory Work</h3>
+                        <p class="text-gray-700 mb-3"><strong>Applications:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li>Monitoring regulatory changes</li>
+                            <li>Policy review and updates</li>
+                            <li>Compliance audits</li>
+                            <li>Risk assessment across contract portfolios</li>
+                            <li>GDPR, CCPA, and privacy compliance checks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">💡 Performance Insights</h3>
+                    <p class="text-gray-700 mb-3">Research shows AI assistance tends to:</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><strong>Boost junior lawyers:</strong> Significant performance improvements for those with less experience</li>
+                        <li><strong>Limited impact on experts:</strong> Minimal performance boost for experienced attorneys</li>
+                        <li><strong>Time efficiency:</strong> Greatest benefit is time savings on routine tasks</li>
+                    </ul>
+                    <p class="mt-3 text-sm text-gray-600">Source: <a href="https://law.stanford.edu/stanford-legal/ai-liability-and-hallucinations-in-a-changing-tech-and-law-environment/" class="text-blue-600 hover:underline" target="_blank">Stanford Law School Research</a></p>
+                </div>
+            </section>
+
+            <!-- Cost Analysis Section -->
+            <section id="costs" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">5. Cost Analysis: Savings vs. Expenditures</h2>
+                
+                <h3 class="text-2xl font-bold mb-4 text-green-800">💰 Cost Savings</h3>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+                        <thead class="bg-green-700 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Activity</th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Traditional Time</th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">With AI</th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Savings</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Contract Review</td>
+                                <td class="px-6 py-4">2-3 hours</td>
+                                <td class="px-6 py-4">30 minutes</td>
+                                <td class="px-6 py-4 text-green-700 font-bold">75-85%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">NDA Review</td>
+                                <td class="px-6 py-4">2 hours</td>
+                                <td class="px-6 py-4">30 minutes</td>
+                                <td class="px-6 py-4 text-green-700 font-bold">75%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Legal Research</td>
+                                <td class="px-6 py-4">Varies</td>
+                                <td class="px-6 py-4">Varies</td>
+                                <td class="px-6 py-4 text-green-700 font-bold">60%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Basic Agreement Processing</td>
+                                <td class="px-6 py-4">$6,900 cost</td>
+                                <td class="px-6 py-4">Significantly reduced</td>
+                                <td class="px-6 py-4 text-green-700 font-bold">Major reduction</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Annual Contract Review (500 contracts)</td>
+                                <td class="px-6 py-4">~360 working days</td>
+                                <td class="px-6 py-4">~160 working days</td>
+                                <td class="px-6 py-4 text-green-700 font-bold">200 working days</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-8">
+                    <h4 class="text-lg font-bold mb-3 text-green-900">Real-World Examples:</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><strong>Lynden Renwick, Managing Partner:</strong> "With LegalOn, I've been able to free up 10 hours a week in work capacity and increase rates due to faster turnarounds, giving me about 40% more billing capacity."</li>
+                        <li><strong>Stephanie Avery, Contract Analyst:</strong> "Contracts that used to take multiple hours or days now take a couple of minutes."</li>
+                        <li><strong>Bochetto & Lentz Trial Firm:</strong> "Less stress, faster answers, and actual work-life balance" through AI research tools.</li>
+                        <li><strong>General Counsel:</strong> "NDA reviews that used to take 2 hours now take 30 minutes. The software helps my team save time and enables me to immediately train new members."</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-red-800">💸 Costs Incurred</h3>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+                        <thead class="bg-red-700 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Cost Category</th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Price Range</th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Contract Review Tools</td>
+                                <td class="px-6 py-4">$179-$1,000/month per user</td>
+                                <td class="px-6 py-4">Tools like Spellbook, LegalOn</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Legal Research (Lexis+ AI)</td>
+                                <td class="px-6 py-4">$200-$1,000+/month; ~$17,500/year median</td>
+                                <td class="px-6 py-4">Enterprise pricing varies</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Westlaw CoCounsel</td>
+                                <td class="px-6 py-4">Custom pricing</td>
+                                <td class="px-6 py-4">Generally for firms with 10+ attorneys</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Harvey (Elite firms)</td>
+                                <td class="px-6 py-4">Premium/Enterprise</td>
+                                <td class="px-6 py-4">For Am Law 100 firms</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Training & Implementation</td>
+                                <td class="px-6 py-4">$5,000-$50,000+</td>
+                                <td class="px-6 py-4">Initial setup and staff training</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Sanctions for Misuse</td>
+                                <td class="px-6 py-4">$1,000-$10,000+ per incident</td>
+                                <td class="px-6 py-4">Plus reputational damage</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-500 p-6">
+                    <h4 class="text-lg font-bold mb-3 text-red-900">⚠️ Hidden Costs of AI Failures:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><strong>Reputational Damage:</strong> National media coverage, client loss, firm embarrassment</li>
+                        <li><strong>Bar Complaints:</strong> State bar associations notified of violations</li>
+                        <li><strong>Client Malpractice Claims:</strong> Potential lawsuits from inadequate representation</li>
+                        <li><strong>Lost Billing:</strong> Time spent correcting errors, responding to sanctions</li>
+                        <li><strong>Career Impact:</strong> Attorneys removed from cases, positions lost</li>
+                        <li><strong>Insurance Premiums:</strong> Potential increases in malpractice insurance</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Tools Section -->
+            <section id="tools" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">6. Recommended AI Tools for Legal Practice</h2>
+                
+                <div class="space-y-8">
+                    <!-- Legal Research Tools -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-800">🔍 Legal Research Tools</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Westlaw CoCounsel</h4>
+                                <p class="text-sm text-gray-600 mb-3">by Thomson Reuters</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Comprehensive legal research, litigation support</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Document analysis, timeline creation, deposition prep, deep integration with Westlaw database</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Custom (generally firms 10+ attorneys)</p>
+                                <a href="https://www.clio.com/blog/lexisnexis-vs-westlaw/" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Lexis+ AI / Protégé</h4>
+                                <p class="text-sm text-gray-600 mb-3">by LexisNexis</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Authoritative research with Shepard's citation validation</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Conversational search, drafting assistance, document upload (up to 300 pages), agentic AI capabilities</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> $200-$1,000+/month; ~$17,500/year median</p>
+                                <a href="https://www.clio.com/blog/lexisnexis-vs-westlaw/" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Fastcase</h4>
+                                <p class="text-sm text-gray-600 mb-3">Budget-Friendly Research</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Solo practitioners, small firms, bar members</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Visual research tools, Bad Law Bot, Interactive Timeline</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Often free with bar membership</p>
+                                <a href="https://growlaw.co/blog/ai-for-legal-research" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Bloomberg Law AI</h4>
+                                <p class="text-sm text-gray-600 mb-3">Enterprise Research</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Large firms needing comprehensive research</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Bloomberg Law Answers, AI Assistant</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> No additional cost for current subscribers</p>
+                                <a href="https://lawlibguides.sandiego.edu/c.php?g=1317323&p=9686747" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contract Review Tools -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-800">📄 Contract Review & Analysis Tools</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">LegalOn</h4>
+                                <p class="text-sm text-gray-600 mb-3">Contract Review Specialist</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Day-1 contract review without training period</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Pre-built attorney playbooks, 70-85% time savings</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Contact for pricing</p>
+                                <a href="https://www.legalontech.com/post/best-ai-contract-review-tools" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Spellbook</h4>
+                                <p class="text-sm text-gray-600 mb-3">Microsoft Word Integration</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Transactional lawyers drafting in Word</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Inline risk flagging, clause suggestions, automated redlines</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> ~$179/month per user</p>
+                                <a href="https://www.spellbook.legal/" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Kira (Litera)</h4>
+                                <p class="text-sm text-gray-600 mb-3">Due Diligence Powerhouse</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> High-volume due diligence, M&A</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Extracts 1,400+ clauses, 90%+ accuracy, 40+ languages</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Enterprise pricing</p>
+                                <a href="https://www.litera.com/products/kira" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">LEGALFLY</h4>
+                                <p class="text-sm text-gray-600 mb-3">All-in-One Review System</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Global teams needing GDPR compliance</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Default anonymization, jurisdiction-aware, auto-redlining</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Contact for pricing</p>
+                                <a href="https://www.legalfly.com/post/9-best-ai-contract-review-software-tools-for-2025" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">goHeather</h4>
+                                <p class="text-sm text-gray-600 mb-3">Affordable AI Review</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Small firms, solo practitioners</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Custom playbooks, jurisdiction-specific, PDF/Word support</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Budget-friendly tiers</p>
+                                <a href="https://www.goheather.io/ai-contract-review-app" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Ironclad</h4>
+                                <p class="text-sm text-gray-600 mb-3">Full CLM Platform</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> End-to-end contract lifecycle management</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Post-signature management, AI-integrated workflows</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Enterprise pricing</p>
+                                <a href="https://www.legalontech.com/post/best-ai-contract-review-tools" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Tools -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-800">🏢 Enterprise & Multi-Practice Tools</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Harvey</h4>
+                                <p class="text-sm text-gray-600 mb-3">Professional Class AI</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> Am Law 100 firms, multi-practice work</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Litigation, corporate, tax support; customizable workflows</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Premium/Enterprise (higher cost)</p>
+                                <a href="https://www.harvey.ai/" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+
+                            <div class="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <h4 class="text-xl font-bold mb-2 text-blue-900">Luminance</h4>
+                                <p class="text-sm text-gray-600 mb-3">M&A Due Diligence</p>
+                                <p class="text-gray-700 mb-3"><strong>Best For:</strong> High-stakes M&A transactions</p>
+                                <p class="text-gray-700 mb-3"><strong>Features:</strong> Specialized due diligence capabilities</p>
+                                <p class="text-gray-700 mb-3"><strong>Pricing:</strong> Enterprise pricing</p>
+                                <a href="https://www.legalontech.com/post/best-ai-contract-review-tools" class="text-blue-600 hover:underline font-semibold" target="_blank">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-purple-50 border-l-4 border-purple-500 p-6">
+                    <h3 class="text-xl font-bold mb-3 text-purple-900">🎯 Tool Selection Guide</h3>
+                    <div class="space-y-3 text-gray-700">
+                        <p><strong>Solo/Small Firms:</strong> Fastcase, goHeather, Spellbook - focus on affordability and ease of use</p>
+                        <p><strong>Mid-Sized Firms:</strong> LegalOn, Kira, Lexis+ AI - balance of features and cost</p>
+                        <p><strong>Large Firms:</strong> Harvey, Westlaw CoCounsel, comprehensive platforms for multi-practice needs</p>
+                        <p><strong>Contract-Heavy Practice:</strong> LegalOn, Kira, LEGALFLY - specialized contract tools</p>
+                        <p><strong>Litigation Focus:</strong> Westlaw CoCounsel, Lexis+ AI - research and case analysis</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ethics Section -->
+            <section id="ethics" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">7. Ethical Considerations & Bar Guidance</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-purple-50 border-l-4 border-purple-500 p-6">
+                        <h3 class="text-xl font-bold mb-3 text-purple-900">American Bar Association (ABA) Resolutions</h3>
+                        <p class="text-gray-700 mb-4">The ABA periodically passes resolutions to provide guidance to lawyers and professionals. In recent years, three key resolutions address AI:</p>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-lg border border-purple-200">
+                                <h4 class="font-bold text-purple-900 mb-2">ABA Resolution 112 (August 2019)</h4>
+                                <p class="text-gray-700"><strong>Focus:</strong> Emerging ethical and legal issues in AI usage</p>
+                                <p class="text-gray-700"><strong>Guidance:</strong> Urges courts and lawyers to address the emerging ethical and legal issues related to the usage of AI in the practice of law.</p>
+                                <p class="text-sm text-gray-600 mt-2"><em>This foundational resolution recognized early on that AI would create novel ethical challenges for the legal profession.</em></p>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded-lg border border-purple-200">
+                                <h4 class="font-bold text-purple-900 mb-2">ABA Resolution 700 (February 2022)</h4>
+                                <p class="text-gray-700"><strong>Focus:</strong> Pretrial risk assessment tools and bias prevention</p>
+                                <p class="text-gray-700"><strong>Guidance:</strong> Urges governments to refrain from using pretrial risk assessment tools unless:</p>
+                                <ul class="list-disc list-inside ml-4 mt-2 text-gray-700 space-y-1">
+                                    <li>Data supporting risk assessment is transparent</li>
+                                    <li>Data is publicly disclosed</li>
+                                    <li>Tools are validated to demonstrate the absence of bias</li>
+                                </ul>
+                                <p class="text-sm text-gray-600 mt-2"><em>This resolution addresses algorithmic bias in criminal justice applications of AI.</em></p>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded-lg border border-purple-200">
+                                <h4 class="font-bold text-purple-900 mb-2">ABA Resolution 604 (February 2023)</h4>
+                                <p class="text-gray-700"><strong>Focus:</strong> Comprehensive AI system design and deployment guidelines</p>
+                                <p class="text-gray-700"><strong>Guidance:</strong> Urges organizations that design, develop, deploy, and use AI systems and capabilities to follow several key guidelines including:</p>
+                                <ul class="list-disc list-inside ml-4 mt-2 text-gray-700 space-y-1">
+                                    <li>Ensuring transparency and accountability</li>
+                                    <li>Implementing appropriate safeguards</li>
+                                    <li>Addressing bias and fairness concerns</li>
+                                    <li>Maintaining human oversight and control</li>
+                                    <li>Protecting privacy and data security</li>
+                                </ul>
+                                <p class="text-sm text-gray-600 mt-2"><em>Most recent and comprehensive resolution providing framework for responsible AI use across all aspects of legal practice.</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 border-l-4 border-purple-500 p-6 mt-6">
+                        <h3 class="text-xl font-bold mb-3 text-purple-900">State Bar Guidance</h3>
+                        <p class="text-gray-700 mb-3">Multiple state bars have issued guidance on AI use:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong>California State Bar:</strong> Emphasized duty of supervision and verification</li>
+                            <li><strong>New York State Bar:</strong> Issued comprehensive AI ethics guidance</li>
+                            <li><strong>Florida Bar:</strong> Published guidelines on professional responsibility with AI</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Federal Court Requirements</h3>
+                        <p class="text-gray-700 mb-3">As of May 2024, over 25 federal judges have issued standing orders:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>Disclosure of AI use in court filings</li>
+                            <li>Certification that AI-generated citations are verified</li>
+                            <li>Monitoring of AI tools used in litigation</li>
+                            <li>Attestation of attorney review of AI outputs</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">Model Rules of Professional Conduct</h3>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+                            <thead class="bg-blue-900 text-white">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-sm font-semibold">Rule</th>
+                                    <th class="px-6 py-3 text-left text-sm font-semibold">AI Application</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Rule 1.1 - Competence</td>
+                                    <td class="px-6 py-4">Lawyers must understand AI tools they use and their limitations</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Rule 1.6 - Confidentiality</td>
+                                    <td class="px-6 py-4">Must protect client data; ensure AI tools have proper security measures</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Rule 3.3 - Candor to Court</td>
+                                    <td class="px-6 py-4">Cannot submit false citations or fabricated legal authority</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Rule 5.1/5.3 - Supervision</td>
+                                    <td class="px-6 py-4">Supervisory lawyers responsible for subordinates' AI use</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Rule 8.4 - Misconduct</td>
+                                    <td class="px-6 py-4">Dishonest conduct includes submitting AI hallucinations knowingly or recklessly</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-900">⚠️ Disciplinary Actions</h3>
+                        <p class="text-gray-700 mb-3">Attorneys have faced:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong>Monetary sanctions</strong> ranging from $1,000 to $10,000+</li>
+                            <li><strong>Bar complaints</strong> referred to state disciplinary authorities</li>
+                            <li><strong>Court appearances revoked</strong> (pro hac vice admission withdrawn)</li>
+                            <li><strong>Employment termination</strong> from law firms</li>
+                            <li><strong>Reputational damage</strong> through published judicial opinions</li>
+                            <li><strong>Potential disbarment</strong> in egregious cases</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- References Section -->
+            <section id="references" class="section-content bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-4 border-blue-500 pb-2">8. References & Additional Resources</h2>
+                
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">Case Law & Legal Articles</h3>
+                <div class="space-y-3 mb-8">
+                    <div class="border-l-4 border-blue-400 pl-4">
+                        <p class="font-semibold">Mata v. Avianca, Inc., 678 F. Supp. 3d 443 (S.D.N.Y. 2023)</p>
+                        <a href="https://www.pymnts.com/artificial-intelligence-2/2023/attorneys-face-sanctions-after-citing-information-hallucinated-by-chatgpt/" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.pymnts.com/artificial-intelligence-2/2023/attorneys-face-sanctions-after-citing-information-hallucinated-by-chatgpt/</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-400 pl-4">
+                        <p class="font-semibold">Johnson v. Dunn, No. 2:21-cv-1701 (N.D. Ala., July 23, 2025)</p>
+                        <a href="https://www.esquiresolutions.com/federal-court-turns-up-the-heat-on-attorneys-using-chatgpt-for-research/" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.esquiresolutions.com/federal-court-turns-up-the-heat-on-attorneys-using-chatgpt-for-research/</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-400 pl-4">
+                        <p class="font-semibold">Ko v Li, 2025 ONSC 2766 (Ontario Superior Court)</p>
+                        <a href="https://www.bclplaw.com/en-US/events-insights-news/fake-legal-authorities-ai-hallucination-or-professional-negligence.html" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.bclplaw.com/en-US/events-insights-news/fake-legal-authorities-ai-hallucination-or-professional-negligence.html</a>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">Academic Research</h3>
+                <div class="space-y-3 mb-8">
+                    <div class="border-l-4 border-green-400 pl-4">
+                        <p class="font-semibold">Stanford Law School - "Profiling Legal Hallucinations in Large Language Models"</p>
+                        <p class="text-sm text-gray-600">Oxford Journal of Legal Analysis, 2024</p>
+                        <a href="https://law.stanford.edu/stanford-legal/ai-liability-and-hallucinations-in-a-changing-tech-and-law-environment/" class="text-blue-600 hover:underline text-sm" target="_blank">https://law.stanford.edu/stanford-legal/ai-liability-and-hallucinations-in-a-changing-tech-and-law-environment/</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-400 pl-4">
+                        <p class="font-semibold">Stanford HAI - "Hallucination-Free? Assessing Reliability of Legal AI Research Tools"</p>
+                        <p class="text-sm text-gray-600">Journal of Empirical Legal Studies (forthcoming)</p>
+                        <a href="https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries" class="text-blue-600 hover:underline text-sm" target="_blank">https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries</a>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">Professional Guidance & Resolutions</h3>
+                <div class="space-y-3 mb-8">
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold">American Bar Association Resolution 112 (August 2019)</p>
+                        <p class="text-sm text-gray-600">Urges courts and lawyers to address emerging ethical and legal issues related to AI usage in legal practice</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold">American Bar Association Resolution 700 (February 2022)</p>
+                        <p class="text-sm text-gray-600">Addresses pretrial risk assessment tools and requirements for transparency, public disclosure, and bias validation</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold">American Bar Association Resolution 604 (February 2023)</p>
+                        <p class="text-sm text-gray-600">Comprehensive guidelines for organizations that design, develop, deploy, and use AI systems</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">Industry Reports & News</h3>
+                <div class="space-y-3 mb-8">
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold">Cronkite News - "As more lawyers fall for AI hallucinations, ChatGPT says: Check my work"</p>
+                        <a href="https://cronkitenews.azpbs.org/2025/10/28/lawyers-ai-hallucinations-chatgpt/" class="text-blue-600 hover:underline text-sm" target="_blank">https://cronkitenews.azpbs.org/2025/10/28/lawyers-ai-hallucinations-chatgpt/</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold">CalMatters - California lawyer's ChatGPT use is why courts want AI regulation</p>
+                        <a href="https://calmatters.org/economy/technology/2025/09/chatgpt-lawyer-fine-ai-regulation/" class="text-blue-600 hover:underline text-sm" target="_blank">https://calmatters.org/economy/technology/2025/09/chatgpt-lawyer-fine-ai-regulation/</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold">ABA Journal - Morgan & Morgan Sanctions Report</p>
+                        <a href="https://www.abajournal.com/news/article/no-42-law-firm-by-headcount-could-face-sanctions-over-fake-case-citations-generated-by-chatgpt" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.abajournal.com/news/article/no-42-law-firm-by-headcount-could-face-sanctions-over-fake-case-citations-generated-by-chatgpt</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold">Jones Walker - "From Enhancement to Dependency: What the Epidemic of AI Failures in Law Means"</p>
+                        <a href="https://www.joneswalker.com/en/insights/blogs/ai-law-blog/from-enhancement-to-dependency-what-the-epidemic-of-ai-failures-in-law-means-for.html?id=102l04x" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.joneswalker.com/en/insights/blogs/ai-law-blog/from-enhancement-to-dependency-what-the-epidemic-of-ai-failures-in-law-means-for.html?id=102l04x</a>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">AI Tool Resources</h3>
+                <div class="space-y-3">
+                    <div class="border-l-4 border-orange-400 pl-4">
+                        <p class="font-semibold">LegalOn - AI Contract Review Software Complete Guide</p>
+                        <a href="https://www.legalontech.com/ai-contract-review-software" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.legalontech.com/ai-contract-review-software</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-orange-400 pl-4">
+                        <p class="font-semibold">Spellbook - Legal AI Tools Comparison</p>
+                        <a href="https://www.spellbook.legal/learn/legal-ai-tools" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.spellbook.legal/learn/legal-ai-tools</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-orange-400 pl-4">
+                        <p class="font-semibold">Clio - LexisNexis vs. Westlaw Comparison</p>
+                        <a href="https://www.clio.com/blog/lexisnexis-vs-westlaw/" class="text-blue-600 hover:underline text-sm" target="_blank">https://www.clio.com/blog/lexisnexis-vs-westlaw/</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-orange-400 pl-4">
+                        <p class="font-semibold">GrowLaw - Best AI Software for Legal Research</p>
+                        <a href="https://growlaw.co/blog/ai-for-legal-research" class="text-blue-600 hover:underline text-sm" target="_blank">https://growlaw.co/blog/ai-for-legal-research</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-4">Conclusion</h2>
+                <p class="text-lg mb-4">
+                    AI tools offer tremendous potential to transform legal practice, delivering significant time savings and efficiency gains. However, the documented cases of AI failures demonstrate that this technology must be used with extreme caution, professional judgment, and rigorous verification processes.
+                </p>
+                <p class="text-lg mb-4">
+                    The legal profession is at a critical juncture. Those who embrace AI responsibly—combining technological efficiency with human oversight—will gain competitive advantages. Those who delegate responsibility to AI without verification risk severe professional consequences.
+                </p>
+                <p class="text-xl font-bold">
+                    Remember: AI is a tool to assist lawyers, not replace professional judgment. Your signature means YOU are responsible.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">© 2026 Legal AI Training Materials | For Educational Purposes</p>
+            <p class="text-xs mt-2 text-gray-400">Last Updated: January 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in TOC
+        const sections = document.querySelectorAll('.section-content');
+        const navLinks = document.querySelectorAll('.toc-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-blue-100', 'font-bold');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('bg-blue-100', 'font-bold');
+                }
+            });
+        });
+
+        // Add print functionality
+        function printPage() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
